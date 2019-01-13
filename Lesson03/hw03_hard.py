@@ -135,10 +135,10 @@ def money(x,y,z):
     #y-норма времени
     #z-отработаные часы
 
-    if y<z:
-        mon=x*(y/z)
+    if z<y:
+        mon=x*(z/y)
     else:
-        mon=x*(2*(y/z)-1)
+        mon=x*(2*(z/y)-1)
     return round(mon,2)
 
 path = os.path.join('data', 'money')
