@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+__author__ = 'Salyakhutdinov Rustem'
 
 help_string = """
 def== Лото ==
@@ -201,6 +202,7 @@ class Lotto:
         
     def game(self):
         """основной метод игры . Вызываем метод step, пока он не вернет True и имя победителя"""
+        print(welcome_string)
         is_end=False
         winner=None
         while not is_end:
@@ -208,8 +210,22 @@ class Lotto:
         print('{} победил'.format(winner))
 
 
-
-
+welcome_string="""
+___  ___ _____  _____   ___   
+|  \/  ||  ___||  __ \ / _ \  
+| .  . || |__  | |  \// /_\ \ 
+| |\/| ||  __| | | __ |  _  | 
+| |  | || |___ | |_\ \| | | | 
+\_|  |_/\____/  \____/\_| |_/ 
+                              
+                              
+ _      _____  _____  _____   
+| |    |  _  ||_   _||  _  |  
+| |    | | | |  | |  | | | |  
+| |    | | | |  | |  | | | |  
+| |____\ \_/ /  | |  \ \_/ /  
+\_____/ \___/   \_/   \___/  
+"""
 
 def menu():
     print(' Выберите действие:')
